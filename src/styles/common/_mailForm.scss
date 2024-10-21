@@ -61,7 +61,7 @@
 
 			input {
 				display: inline-block;
-				background:rgba(var(--keyRGB), 0.8);
+				background: rgba(var(--keyRGB), 0.8);
 				border-radius: 3px;
 				padding: 10px 20px;
 				font: 300 0.6rem/1 'orbitron';
@@ -88,19 +88,19 @@
 			color: #777;
 		}
 	}
+}
 
-	@media screen and (max-width: $tablet) {
-		.mailForm {
-			.formBox {
-				width: 100%;
-				padding-right: 0px;
-				margin-bottom: 80px;
-				border-right: none;
-			}
-			.info {
-				width: 100%;
-				padding-left: 0px;
-			}
+@media screen and (max-width: $tablet) {
+	.mailForm {
+		.formBox {
+			width: 100%;
+			padding-right: 0px;
+			margin-bottom: 80px;
+			border-right: none;
+		}
+		.info {
+			width: 100%;
+			padding-left: 0px;
 		}
 	}
 }

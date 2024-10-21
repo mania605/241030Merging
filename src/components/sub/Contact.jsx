@@ -7,7 +7,7 @@ export default function Contact() {
 	return (
 		<Layout title={'CONTACT'}>
 			<Content delay={1}>
-				<MailForm />
+				<MailForm className='mailForm' />
 				<Map />
 			</Content>
 		</Layout>
