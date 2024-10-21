@@ -49,6 +49,8 @@ export default function Gallery() {
 		<>
 			<Layout title={'GALLERY'}>
 				<Content delay={1.5} customMotion={customMotion}>
+					<p>This web page was created for study purposes not for commercial use.</p>
+					<p>The Imanes below are sorced from 'unsplash.com'</p>
 					<article className='controller'>
 						<ul className='type'>
 							<li onClick={() => setType({ type: 'mine' })} className={Type.type === 'mine' ? 'on' : ''}>
