@@ -1,0 +1,16 @@
+@media screen and (max-width: $mobile) {
+	.visual {
+		.textBox {
+			width: 80%;
+			left: 10%;
+			top: auto;
+			bottom: 20vh;
+			z-index: 4;
+		}
+
+		.swiper {
+			left: 0%;
+			padding: 10vh 10vw;
+		}
+	}
+}

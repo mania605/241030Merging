@@ -3,6 +3,11 @@ $gap: 80px;
 $count: 4;
 
 .gallery {
+	.notice {
+		font: 400 0.6rem/1.2 'raleway';
+		color: hotpink;
+	}
+	
 	.controller {
 		width: 100%;
 		margin: 60px 0px;
