@@ -14,6 +14,38 @@ export default function Youtube() {
 
 	return (
 		<Layout title={'YOUTUBE'}>
+{/* <h1>AVALLION YOUTUBE VIDEOS</h1>
+	<iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/0XPfwjw0z-Q?autoplay=1" 
+    allow="autoplay" frameborder="0" allowfullscreen>
+</iframe>   */}
+
+<main class="wrapper">
+      <div class="video">
+        <div class="video__info">
+          <h2 class="video__info__title">AVALLION </h2>
+          <p class="video__info__desc">BRAND STORY</p>
+        </div>
+        <video class="video__item" loop>
+ 
+          <source src="https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL" type="video/webm" />
+        </video>
+      </div>
+      <div class="video">
+        <div class="video__info">
+          <h2 class="video__info__title">STEP into possibilities</h2>
+          <p class="video__info__desc">First Fragrance</p>
+        </div>
+        <video class="video__item" loop> 
+          <source src="https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL" type="video/webm" />
+        </video>
+      </div>
+
+
+    </main>
+    <script defer src="./scripts.js"></script>
+
+
 			<Content delay={1}>
 				{isPending && <p>Loading...</p>}
 				{Vids?.map((vid, idx) => {  
