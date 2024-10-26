@@ -18,7 +18,7 @@ html {
 	font-size: 16px;
 }
 body {
-	background: #000000;
+	background: rgba(var(--keyRGB), 0.8);
 	width: 100%;
 	overflow-x: hidden;
 
