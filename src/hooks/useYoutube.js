@@ -6,8 +6,8 @@ const fetchYoutube = async ({ queryKey }) => {
 	console.log(queryKey[1]); //{type:'A'}
 	const api_key = import.meta.env.VITE_YOUTUBE_API;
 	const baseURL = 'https://www.googleapis.com/youtube/v3/playlistItems';
-	const pidA = 'PLPQbFPhUTXltlDIIxe7HYWMWCtkogF9zy&index=1';
-	const pidB = 'PLYOPkdUKSFgUJeKpDIbI0H1wwgQO-hCZF';
+	const pidB = 'PLPQbFPhUTXltlDIIxe7HYWMWCtkogF9zy';
+	const pidA = 'PLPQbFPhUTXlv3tH5q7_gYmvrbDcaSsI3S';
 	const num = 8;
 	let url = '';
 	const urlA = `${baseURL}?part=snippet&playlistId=${pidA}&key=${api_key}&maxResults=${num}`;

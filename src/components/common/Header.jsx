@@ -14,7 +14,7 @@ export default function Header() {
 		<>
 			<header className={`header ${pathname === '/' && 'main'}`}>
 				<h1>
-					<Link to={'/'}>ALPACO</Link>
+					<Link to={'/'}>AVALLION</Link>
 				</h1>
 
 				<nav>
