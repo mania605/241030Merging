@@ -14,6 +14,10 @@ export default function Youtube() {
 
 	return (
 		<Layout title={'YOUTUBE'}>
+			<div className="swiperBox">
+			
+
+			</div>
 			<Content delay={1}>
 				{isPending && <p>Loading...</p>}
 				{Vids?.map((vid, idx) => {  

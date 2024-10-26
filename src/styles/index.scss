@@ -4,16 +4,15 @@ $tablet: 999px;
 $mobile: 599px;
 :root{
   --keyRGB: 40,40,40;
-
-
-
 }
+
+//testtest
 //rgba(var(--keyRGB), 0.5;
 //rgba(40,40,40,0/5);
 
 //black: 40,40,40;
-//hotpink: 150,0,120;
-//tealblue: 0,120,150;
+//grey: 20,20,20;
+//darkbrown: 34, 5, 1;
 
 
 //scss파일 없이 동적으로 제어되는 스타일을 css변수로 제어가 필요할때 클래스명 부여후 !important로 우선순위 높여줌
@@ -26,7 +25,7 @@ $mobile: 599px;
 }
 
 .test{
-  background: rgb(122, 22, 84);
+  background: rgb(34, 5, 1);
 
 }
 
