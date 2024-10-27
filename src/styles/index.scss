@@ -14,7 +14,7 @@ $mobile: 599px;
 
 //black: 40,40,40;
 //grey: 20,20,20;
-//darkbrown: 34, 5, 1;
+//white;255, 255, 255;
 
 
 //scss파일 없이 동적으로 제어되는 스타일을 css변수로 제어가 필요할때 클래스명 부여후 !important로 우선순위 높여줌
@@ -27,7 +27,7 @@ $mobile: 599px;
 }
 
 .test{
-  background: rgb(34, 5, 1);
+  background: rgb(255, 255, 255);
 
 }
 
@@ -46,10 +46,10 @@ $mobile: 599px;
 @import './main/visual';
 
 //sub
-@import './sub/members';
+@import './sub/brand';
 @import './sub/youtube';
 @import './sub/youtubeDetail';
-@import './sub/gallery'; 
+@import './sub/product'; 
 
 /*
   리액트 혹은 일반 js로 스타일 파일의 변수값을 제어하고자할때 일반 scss파일의 변수는 제어 불가

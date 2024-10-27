@@ -7,7 +7,7 @@ import { useFlickrQuery } from '../../hooks/useFlickr';
 import { AnimatePresence } from 'framer-motion';
 import { useZustandStore } from '../../hooks/useZustand';
 
-export default function Gallery() {
+export default function Product() {
 	//커스텀훅에 콜백함수를 인수로 넣어서 자동전달되는 전역 state에서 직접 IsModal상태값을 추출해서 변수에 담아줌
 	//해당 갤러리 컴포넌트는 IsModal값을 제외한 나머지 전역 상태값 변경에는 반응하지 않는 선택적 상태구독 처리
 	//이슈사항 : 아래와 같이 선택적 상태구독을 했음에도 불구하고 Gallery컴포넌트는 다른 전역 상태값 변경시 계속 재렌더링 됨
@@ -15,7 +15,7 @@ export default function Gallery() {
 	const IsModal = useZustandStore(state => state.IsModal);
 	const setModalOpen = useZustandStore(state => state.setModalOpen);
 
-	const ref_gallery = useRef(null);
+	const ref_product = useRef(null);
 	const [Index, setIndex] = useState(0);
 	const [Type, setType] = useState({ type: 'mine' });
 	const { data: Flickr } = useFlickrQuery(Type);
@@ -34,10 +34,10 @@ export default function Gallery() {
 	};
 
 	useEffect(() => {
-		ref_gallery.current.classList.remove('on');
+		ref_product.current.classList.remove('on');
 
 		setTimeout(() => {
-			ref_gallery.current.classList.add('on');
+			ref_product.current.classList.add('on');
 		}, 800);
 	}, [Type]);
 
@@ -67,7 +67,7 @@ export default function Gallery() {
 						</form>
 					</article>
 
-					<section className='galleryList' ref={ref_gallery}>
+					<section className='galleryList' ref={ref_product}>
 						{Flickr?.length === 0 && <p>해당 검색어의 검색 결과가 없습니다.</p>}
 						{Flickr?.map((data, idx) => {
 							return (

@@ -5,9 +5,9 @@ import MaskBox from '../common/MaskBox';
 import MaskText from '../common/MaskText';
 import Content from '../common/Content';
 
-export default function Members() {
+export default function Brand() {
 	return (
-		<Layout title={'MEMBERS'}>
+		<Layout title={'BRAND'}>
 			<MaskText delay={1}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, ad?</MaskText>
 			<br />
 			<MaskText delay={1.5} style={{ marginBottom: 80 }}>
