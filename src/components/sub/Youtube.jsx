@@ -61,23 +61,55 @@ export default function Youtube() {
 			<SwiperSlide className="swiper-slide">
 				<div className="inner">
 					<div className="con">
+						<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
 						<img src="public/thumb1.png" alt="AVALLION" />
 						<h2>AVALLION</h2>
 						<p>BRAND STORY</p>
 					</div>
 				</div>
 			</SwiperSlide>
-			{/* 추가 슬라이드 */}
+ 
 			<SwiperSlide className="swiper-slide">
 				<div className="inner">
 					<div className="con">
+					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
 						<img src="public/thumb2.png" alt="STEP INTO POSSIBILITIES" />
 						<h2>STEP INTO POSSIBILITIES</h2>
 						<p>First Fragrance!</p>
 					</div>
 				</div>
 			</SwiperSlide>
-			{/* 반복 슬라이드 구조 */}
+
+			<SwiperSlide className="swiper-slide">
+				<div className="inner">
+					<div className="con">
+					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
+						<img src="public/thumb3.png" alt="AVALLION" />
+						<h2>AVALLION</h2>
+						<p>BRAND STORY</p>
+					</div>
+				</div>
+			</SwiperSlide>
+			<SwiperSlide className="swiper-slide">
+				<div className="inner">
+					<div className="con">
+					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
+						<img src="public/thumb4.png" alt="STEP INTO POSSIBILITIES" />
+						<h2>STEP INTO POSSIBILITIES</h2>
+						<p>First Fragrance!</p>
+					</div>
+				</div>
+			</SwiperSlide>
+			<SwiperSlide className="swiper-slide">
+				<div className="inner">
+					<div className="con">
+					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
+						<img src="public/thumb5.png" alt="STEP INTO POSSIBILITIES" />
+						<h2>STEP INTO POSSIBILITIES</h2>
+						<p>First Fragrance!</p>
+					</div>
+				</div>
+			</SwiperSlide>
 		</Swiper>
 
 		{/* 네비게이션 및 페이지네이션 요소 */}
