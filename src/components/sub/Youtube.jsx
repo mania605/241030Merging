@@ -59,56 +59,64 @@ export default function Youtube() {
 			className="swiper-wrapper"
 		>
 			<SwiperSlide className="swiper-slide">
+			<a href="https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL" target="_blank" rel="noopener noreferrer">
 				<div className="inner">
 					<div className="con">
-						<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
 						<img src="public/thumb1.png" alt="AVALLION" />
 						<h2>AVALLION</h2>
 						<p>STEP INTO POSSIBILITIES</p>
 					</div>
 				</div>
+				</a>
 			</SwiperSlide>
  
 			<SwiperSlide className="swiper-slide">
+			<a href="https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL" target="_blank" rel="noopener noreferrer">
 				<div className="inner">
 					<div className="con">
 					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
-						<img src="public/thumb2.png" alt="STEP INTO POSSIBILITIES" />
+						<img src="public/thumb2.png" alt="PERFUME DESIGNER" />
 						<h2>PERFUME DESIGNER</h2>
 						<p>ANGELO BEAN</p>
 					</div>
 				</div>
+				</a>
 			</SwiperSlide>
 
 			<SwiperSlide className="swiper-slide">
+			<a href="https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL" target="_blank" rel="noopener noreferrer">
 				<div className="inner">
 					<div className="con">
 					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
-						<img src="public/thumb3.png" alt="AVALLION" />
+						<img src="public/thumb3.png" alt="LIMITLESS" />
 						<h2>LIMITLESS POTENTIAL</h2>
+						<p>FIRST FRAGRANCE</p>
+									</div>
+				</div>
+				</a>
+			</SwiperSlide>
+			<SwiperSlide className="swiper-slide">
+			<a href="https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL" target="_blank" rel="noopener noreferrer">
+				<div className="inner">
+					<div className="con">
+ 
+						<img src="public/thumb4.png" alt="AVALLION" />
+						<h2>AVALLION</h2>
 						<p>FIRST FRAGRANCE</p>
 					</div>
 				</div>
+				</a>
 			</SwiperSlide>
 			<SwiperSlide className="swiper-slide">
+			<a href="https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL" target="_blank" rel="noopener noreferrer">
 				<div className="inner">
 					<div className="con">
-					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
-						<img src="public/thumb4.png" alt="STEP INTO POSSIBILITIES" />
-						<h2>STEP INTO POSSIBILITIES</h2>
-						<p>PROJCT AVALLION</p>
-					</div>
-				</div>
-			</SwiperSlide>
-			<SwiperSlide className="swiper-slide">
-				<div className="inner">
-					<div className="con">
-					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
 						<img src="public/thumb5.png" alt="STEP INTO POSSIBILITIES" />
-						<h2>BRAND STORY</h2>
-						<p>First Fragrance!</p>
+						<h2>STEP INTO POSSIBILITIES</h2>
+						<p>BRAND STORY</p>
 					</div>
 				</div>
+				</a>
 			</SwiperSlide>
 		</Swiper>
 
