@@ -1,167 +1,108 @@
-.members {
-	.ceoBox {
-		width: 100%;
+main {
+	padding: 0vh 10vw;
+}
+main > h2 {
+	font-size: 1rem;
+	color: white;
+}
+.ceoBox {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	font-family: 'Amiri';
+	.story {
+		width: 40%;
+		height: 100%;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
-		margin-bottom: 150px;
+		align-items: center;
 
-		.txt {
-			width: 45%;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: flex-end;
-			align-content: flex-end;
-			padding-bottom: 100px;
-			font-family: 'raleway';
-
-			h2 {
-				width: 100%;
-				text-align: right;
-				font-size: 2.4rem;
-			}
-			p {
-				width: 100%;
-				text-align: right;
-				font-size: 1.6rem;
-			}
+		.ceoTitle {
+			width: 100%;
+			font-weight: bold;
+			font-size: 1.5rem;
+			margin-bottom: 50px;
 		}
-
-		.picWrapper {
-			width: 50% !important;
+		.ceoSubTitle {
+			font-weight: 200;
+			font-size: 0.8rem;
+			line-height: 2rem;
+			margin-top: 20px;
 		}
 	}
 
-	.memberListBox {
-		width: 100%;
+	.ceoImg {
+		width: 40%;
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-between;
+		justify-content: flex-end;
+		align-content: flex-end;
+		padding-bottom: 100px;
+		font-family: 'Amiri';
+		line-height: 1;
 
-		.titBox {
-			width: 70%;
-
-			h2 {
-				font: 600 2rem/1 'orbitron';
-				color: #333;
-				letter-spacing: 1px;
-				margin-bottom: 20px;
-			}
-			p {
-				font: 300 1rem/1.2 'raleway';
-				color: #666;
-				margin-bottom: 50px;
-			}
+		.ceo {
+			width: 80%;
+			height: 100%;
+			object-fit: contain;
 		}
 
-		ul {
-			width: 60%;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-
-			li {
-				width: 30%;
-				margin-bottom: 70px;
-
-				.pic {
-					width: 100%;
-					height: 15vw;
-					margin-bottom: 20px;
-
-					img {
-						width: 100%;
-						height: 100%;
-						object-fit: cover;
-					}
-				}
-
-				.txt {
-					h2 {
-						font: 700 1rem/1 'raleway';
-						margin-bottom: 10px;
-					}
-					p {
-						font-size: 0.6rem;
-					}
-				}
-			}
+		h2 {
+			width: 100%;
+			text-align: right;
+			font-size: 2.4rem;
 		}
-
-		.descBox {
-			width: 28%;
-			display: flex;
-			flex-wrap: wrap;
-			align-content: center;
-			padding-bottom: 300px;
-
-			h2 {
-				font: 500 1.4rem/1 'orbitron';
-				color: #333;
-				margin-bottom: 30px;
-			}
-			p {
-				font-size: 1rem;
-				line-height: 1.3;
-				color: #777;
-				word-break: break-all;
-			}
+		p {
+			width: 100%;
+			text-align: right;
+			font-size: 1.6rem;
 		}
 	}
 }
 
-@media screen and (max-width: $tablet) {
-	.members {
-		.ceoBox {
-			.txt {
+.mid {
+	width: 100%;
+	height: 30vh;
+	border: solid 1px black;
+}
+
+section {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	article {
+		width: 31%;
+		margin-bottom: 40px;
+
+		//자주 쓰이는 패턴
+		//먼저 .pic으로 이미지가 들어갈 프레임 크기를 지정
+		.pic {
+			width: 100%;
+			height: 400px;
+			margin-bottom: 20px;
+
+			//이후 안쪽 이미지 요소는 무조건
+			//너비와 높이를 100%로 설정한 뒤 object-fit:cover 지정
+			//그럼 pic프레임의 크기에 맞게 이미지가 박스 안쪽에 꽉 차셔 배치됨
+			.others {
 				width: 100%;
-				padding-bottom: 30px;
-				justify-content: flex-start;
-
-				& > * {
-					text-align: left !important;
-				}
-
-				h2 {
-					font-size: 1.8rem;
-				}
-			}
-			.picWrapper {
-				width: 100% !important;
-				height: 45vh !important;
+				height: 100%;
+				object-fit: cover;
 			}
 		}
-		.memberListBox {
-			.titBox {
-				width: 100%;
-			}
-			ul {
-				width: 100%;
-			}
-			.descBox {
-				width: 100%;
-			}
+		h3 {
+			font: bold 1.2rem/1 'arial';
+			color: #555;
+			margin-bottom: 10px;
 		}
 	}
 }
-
-@media screen and (max-width: $mobile) {
-	.members {
-		.ceoBox {
-			margin-bottom: 80px;
-			.picWrapper {
-				height: 30vh !important;
-			}
-		}
-		.memberListBox {
-			ul {
-				li {
-					width: 47%;
-					.pic {
-						height: 30vw;
-					}
-				}
-			}
-		}
-	}
+.last {
+	width: 100%;
+	height: 30vh;
+	border: solid 1px black;
 }

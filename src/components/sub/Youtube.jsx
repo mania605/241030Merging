@@ -31,7 +31,6 @@ export default function Youtube() {
 	return (
 		<Layout title={'YOUTUBE'}>
 		<div className="wrap">
-		<h1>AVALLION <span>YOUTUBE</span> </h1>
 		<ul className="auto">
 			<li className="btnStart"><i className="fas fa-play"></i></li>
 			<li className="btnStop"><i className="fas fa-pause"></i></li>
@@ -71,20 +70,20 @@ export default function Youtube() {
 			</SwiperSlide>
  
 			<SwiperSlide className="swiper-slide">
-			<a href="https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL" target="_blank" rel="noopener noreferrer">
+ 
 				<div className="inner">
 					<div className="con">
 					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
 						<img src="public/thumb2.png" alt="PERFUME DESIGNER" />
-						<h2>PERFUME DESIGNER</h2>
-						<p>ANGELO BEAN</p>
+						<h2>CREMA NERA</h2>
+						<p>HIGH-PRECISION SKIN REVIVAL</p>
 					</div>
 				</div>
-				</a>
+ 
 			</SwiperSlide>
 
 			<SwiperSlide className="swiper-slide">
-			<a href="https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL" target="_blank" rel="noopener noreferrer">
+ 
 				<div className="inner">
 					<div className="con">
 					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
@@ -93,31 +92,27 @@ export default function Youtube() {
 						<p>FIRST FRAGRANCE</p>
 									</div>
 				</div>
-				</a>
+ 
 			</SwiperSlide>
 			<SwiperSlide className="swiper-slide">
-			<a href="https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL" target="_blank" rel="noopener noreferrer">
-				<div className="inner">
+ 				<div className="inner">
 					<div className="con">
- 
-						<img src="public/thumb4.png" alt="AVALLION" />
+ 						<img src="public/thumb4.png" alt="AVALLION" />
 						<h2>AVALLION</h2>
 						<p>FIRST FRAGRANCE</p>
 					</div>
 				</div>
-				</a>
+ 
 			</SwiperSlide>
 			<SwiperSlide className="swiper-slide">
-			<a href="https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL" target="_blank" rel="noopener noreferrer">
-				<div className="inner">
+ 				<div className="inner">
 					<div className="con">
 						<img src="public/thumb5.png" alt="STEP INTO POSSIBILITIES" />
 						<h2>STEP INTO POSSIBILITIES</h2>
 						<p>BRAND STORY</p>
 					</div>
 				</div>
-				</a>
-			</SwiperSlide>
+ 			</SwiperSlide>
 		</Swiper>
 
 		{/* 네비게이션 및 페이지네이션 요소 */}

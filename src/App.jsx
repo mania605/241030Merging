@@ -22,7 +22,7 @@ export default function App() {
 			<AnimatePresence mode='wait'>
 				<Routes location={location} key={location.pathname}>
 					<Route path='/' element={<Home />} />
-					<Route path='/members' element={<Brand />} />
+					<Route path='/brand' element={<Brand />} />
 					<Route path='/gallery' element={<Product />} />
 					<Route path='/youtube' element={<Youtube />} />
 				{/* <Route path='/youtube/:id' element={<YoutubeDetail />} /> */}

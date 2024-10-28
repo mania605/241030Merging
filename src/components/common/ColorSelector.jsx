@@ -1,5 +1,5 @@
 export default function ColorSelector() {
-	const colors = ['40,40,40', '20,20,20', '34, 5, 1'];
+	const colors = ['40,40,40', '0,0,0', '255,255,255'];
 	const outerStyle = { display: 'flex', gap: 10, position: 'fixed', left: '5vw', bottom: '10vh', zIndex: 6 };
 	const btnStyle = { width: 14, height: 14, borderRadius: '50%', cursor: 'pointer', border: 'none' };
 	const changeColor = color => {
