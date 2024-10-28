@@ -64,7 +64,7 @@ export default function Youtube() {
 						<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
 						<img src="public/thumb1.png" alt="AVALLION" />
 						<h2>AVALLION</h2>
-						<p>BRAND STORY</p>
+						<p>STEP INTO POSSIBILITIES</p>
 					</div>
 				</div>
 			</SwiperSlide>
@@ -74,8 +74,8 @@ export default function Youtube() {
 					<div className="con">
 					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
 						<img src="public/thumb2.png" alt="STEP INTO POSSIBILITIES" />
-						<h2>STEP INTO POSSIBILITIES</h2>
-						<p>First Fragrance!</p>
+						<h2>PERFUME DESIGNER</h2>
+						<p>ANGELO BEAN</p>
 					</div>
 				</div>
 			</SwiperSlide>
@@ -85,8 +85,8 @@ export default function Youtube() {
 					<div className="con">
 					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
 						<img src="public/thumb3.png" alt="AVALLION" />
-						<h2>AVALLION</h2>
-						<p>BRAND STORY</p>
+						<h2>LIMITLESS POTENTIAL</h2>
+						<p>FIRST FRAGRANCE</p>
 					</div>
 				</div>
 			</SwiperSlide>
@@ -96,7 +96,7 @@ export default function Youtube() {
 					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
 						<img src="public/thumb4.png" alt="STEP INTO POSSIBILITIES" />
 						<h2>STEP INTO POSSIBILITIES</h2>
-						<p>First Fragrance!</p>
+						<p>PROJCT AVALLION</p>
 					</div>
 				</div>
 			</SwiperSlide>
@@ -105,7 +105,7 @@ export default function Youtube() {
 					<div className="con">
 					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
 						<img src="public/thumb5.png" alt="STEP INTO POSSIBILITIES" />
-						<h2>STEP INTO POSSIBILITIES</h2>
+						<h2>BRAND STORY</h2>
 						<p>First Fragrance!</p>
 					</div>
 				</div>
