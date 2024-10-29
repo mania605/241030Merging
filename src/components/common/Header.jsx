@@ -31,6 +31,10 @@ export default function Header() {
 					<ul className='sns'>
 						{snsArr.map((Data, idx) => (
 							<li key={idx}>
+								<a href={
+          				idx === 0 ? '/contact' :
+          				idx === 1 ? '/posts' :
+          				idx === 2 ? '/youtube' : '#'}></a>
 								<Data />
 							</li>
 						))}

@@ -5,10 +5,16 @@
 	justify-content: space-between;
 	margin: 100px 0px;
 
+
+	.info {
+		width: 48%;
+		padding-left: 8vw;
+	}
 	.formBox {
 		width: 48%;
-		border-right: 1px solid #bbb;
-		padding-right: 8vw;
+		border-left: 3px solid #bbb;
+		border-radius: 3px;
+		padding-left: 8vw;
 
 		label {
 			display: block;
@@ -73,9 +79,6 @@
 			}
 		}
 	}
-	.info {
-		width: 48%;
-		padding-left: 8vw;
 
 		h2 {
 			font: 500 2rem/1 'Roboto';
@@ -88,7 +91,7 @@
 			color: #777;
 		}
 	}
-}
+
 
 @media screen and (max-width: $tablet) {
 	.mailForm {

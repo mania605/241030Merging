@@ -22,13 +22,13 @@ export default function Youtube() {
 
  
 
-	const swiperRef = useRef(null); // Swiper 인스턴스를 참조하기 위한 useRef
+	// const swiperRef = useRef(null); // Swiper 인스턴스를 참조하기 위한 useRef
 
-	useEffect(() => {
-		// 자동 재생 버튼 기능
-		document.querySelector('.btnStart').addEventListener('click', () => swiperRef.current?.autoplay.start());
-		document.querySelector('.btnStop').addEventListener('click', () => swiperRef.current?.autoplay.stop());
-	}, []);
+	// useEffect(() => {
+	// 	// 자동 재생 버튼 기능
+	// 	document.querySelector('.btnStart').addEventListener('click', () => swiperRef.current.autoplay.start());
+	// 	document.querySelector('.btnStop').addEventListener('click', () => swiperRef.current.autoplay.stop());
+	// }, []);
 
 
 	return (
@@ -36,8 +36,8 @@ export default function Youtube() {
 
 		<div className="wrap">
 		<ul className="auto">
-			<li className="btnStart"><i className="fas fa-play"></i></li>
-			<li className="btnStop"><i className="fas fa-pause"></i></li>
+			{/* <li className="btnStart"><i className="fas fa-play"></i></li>
+			<li className="btnStop"><i className="fas fa-pause"></i></li> */}
 		</ul>
 
 		<Swiper
@@ -90,8 +90,7 @@ export default function Youtube() {
  
 				<div className="inner">
 					<div className="con">
-					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
-						<img src="/thumb3.png" alt="LIMITLESS" />
+ 						<img src="/thumb3.png" alt="LIMITLESS" />
 						<h3>LIMITLESS POTENTIAL</h3>
 						<p>FIRST FRAGRANCE</p>
 									</div>

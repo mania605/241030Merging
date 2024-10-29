@@ -29,6 +29,14 @@ export default function MailForm() {
 
 	return (
 		<article className='mailForm'>
+						<div className='info'>
+				<h2>Information</h2>
+				<p>
+				Business Inquiry 
+				</p>
+				<br />
+				<p>We welcome a variety of business opportunities. Please leave a message, and our team will get back to you as soon as possible.</p>
+			</div>
 			<div className='formBox'>
 				{/* form에 전송 이벤트 연결 */}
 				<form onSubmit={sendForm} ref={ref_form}>
@@ -58,14 +66,7 @@ export default function MailForm() {
 				</form>
 			</div>
 
-			<div className='info'>
-				<h2>Information</h2>
-				<p>
-				Business Inquiry 
-				</p>
-				<br />
-				<p>We welcome a variety of business opportunities. Please leave a message, and our team will get back to you as soon as possible.</p>
-			</div>
+
 		</article>
 	);
 }
