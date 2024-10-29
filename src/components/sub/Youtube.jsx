@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import Layout from '../common/Layout';
 import Pic from '../common/Pic';
 import useShortenText from '../../hooks/useShortenText';
@@ -21,10 +21,12 @@ export default function Youtube() {
 
  
 
+	const swiperRef = useRef(null); // Swiper 인스턴스를 참조하기 위한 useRef
+
 	useEffect(() => {
 		// 자동 재생 버튼 기능
-		document.querySelector('.btnStart').addEventListener('click', () => swiper.autoplay.start());
-		document.querySelector('.btnStop').addEventListener('click', () => swiper.autoplay.stop());
+		document.querySelector('.btnStart').addEventListener('click', () => swiperRef.current?.autoplay.start());
+		document.querySelector('.btnStop').addEventListener('click', () => swiperRef.current?.autoplay.stop());
 	}, []);
 
 
@@ -61,7 +63,7 @@ export default function Youtube() {
 			<a href="https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL" target="_blank" rel="noopener noreferrer">
 				<div className="inner">
 					<div className="con">
-						<img src="public/thumb1.png" alt="AVALLION" />
+						<img src="/thumb1.png" alt="AVALLION" />
 						<h2>AVALLION</h2>
 						<p>STEP INTO POSSIBILITIES</p>
 					</div>
@@ -74,7 +76,7 @@ export default function Youtube() {
 				<div className="inner">
 					<div className="con">
 					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
-						<img src="public/thumb2.png" alt="PERFUME DESIGNER" />
+						<img src="/thumb2.png" alt="PERFUME DESIGNER" />
 						<h2>CREMA NERA</h2>
 						<p>HIGH-PRECISION SKIN REVIVAL</p>
 					</div>
@@ -87,7 +89,7 @@ export default function Youtube() {
 				<div className="inner">
 					<div className="con">
 					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
-						<img src="public/thumb3.png" alt="LIMITLESS" />
+						<img src="/thumb3.png" alt="LIMITLESS" />
 						<h2>LIMITLESS POTENTIAL</h2>
 						<p>FIRST FRAGRANCE</p>
 									</div>
@@ -97,7 +99,7 @@ export default function Youtube() {
 			<SwiperSlide className="swiper-slide">
  				<div className="inner">
 					<div className="con">
- 						<img src="public/thumb4.png" alt="AVALLION" />
+ 						<img src="/thumb4.png" alt="AVALLION" />
 						<h2>AVALLION</h2>
 						<p>FIRST FRAGRANCE</p>
 					</div>
@@ -107,7 +109,7 @@ export default function Youtube() {
 			<SwiperSlide className="swiper-slide">
  				<div className="inner">
 					<div className="con">
-						<img src="public/thumb5.png" alt="STEP INTO POSSIBILITIES" />
+						<img src="/thumb5.png" alt="STEP INTO POSSIBILITIES" />
 						<h2>STEP INTO POSSIBILITIES</h2>
 						<p>BRAND STORY</p>
 					</div>
