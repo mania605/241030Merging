@@ -12,7 +12,7 @@
 
 		label {
 			display: block;
-			font: 500 1rem/1 'orbitron';
+			font: 500 1rem/1 'Roboto';
 			color: #333;
 			margin-bottom: 20px;
 		}
@@ -30,7 +30,7 @@
 			//placeholer 요소 안쪽의 텍스트 스타일링
 			&::placeholder {
 				color: rgba(var(--keyRGB), 0.6);
-				font: 400 0.8rem/1.2 'raleway';
+				font: 400 0.8rem/1.2 'amiri';
 			}
 		}
 
@@ -64,7 +64,7 @@
 				background: rgba(var(--keyRGB), 0.8);
 				border-radius: 3px;
 				padding: 10px 20px;
-				font: 300 0.6rem/1 'orbitron';
+				font: 600 0.8rem/1 'Roboto';
 				letter-spacing: 1px;
 				color: #fff;
 				cursor: pointer;
@@ -78,7 +78,7 @@
 		padding-left: 8vw;
 
 		h2 {
-			font: 500 2rem/1 'orbitron';
+			font: 500 2rem/1 'Roboto';
 			letter-spacing: 1px;
 			color: #444;
 			margin-bottom: 30px;

@@ -10,6 +10,7 @@ import { AnimatePresence } from 'framer-motion';
 import MobileMenu from './components/common/MobileMenu';
 import { useZustandStore } from './hooks/useZustand';
 import ColorSelector from './components/common/ColorSelector';
+import BackgroundVideo from './components/sub/BackgroundVideo';
 
 export default function App() {
 	const location = useLocation();
@@ -26,6 +27,7 @@ export default function App() {
  					<Route path='/product' element={<Product />} />
 					<Route path='/youtube' element={<Youtube />} />
 					<Route path='/contact' element={<Contact />} />
+					<Route path='/BackgroundVideo' element={<BackgroundVideo />} />
 				</Routes>
 			</AnimatePresence>
 

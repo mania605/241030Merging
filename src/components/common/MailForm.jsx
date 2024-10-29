@@ -61,11 +61,10 @@ export default function MailForm() {
 			<div className='info'>
 				<h2>Information</h2>
 				<p>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate reprehenderit laudantium cupiditate qui? Possimus sint eum
-					obcaecati ut cum ea, praesentium temporibus, quos vel beatae vero esse quisquam expedita animi.
+				Business Inquiry 
 				</p>
 				<br />
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, sequi ipsum. Deleniti nesciunt rerum ex!</p>
+				<p>We welcome a variety of business opportunities. Please leave a message, and our team will get back to you as soon as possible.</p>
 			</div>
 		</article>
 	);

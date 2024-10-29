@@ -10,25 +10,18 @@ export default function Map() {
 
 	const ref_info = useRef([
 		{
-			title: 'COEX',
-			latlng: new kakao.maps.LatLng(37.5094091584729, 127.0624304750884),
+			title: 'SHOP',
+			latlng: new kakao.maps.LatLng( 37.54416891598319,127.044510032352),
 			markerImg: 'marker1.png',
-			markerSize: new kakao.maps.Size(232, 99),
-			markerOffset: { offset: new kakao.maps.Point(116, 99) }
-		},
+			markerSize: new kakao.maps.Size(55, 55),
+			markerOffset: { offset: new kakao.maps.Point(77, 77)}
+		}, 
 		{
-			title: 'NEXON',
-			latlng: new kakao.maps.LatLng(37.40211707077346, 127.10344953763003),
-			markerImg: 'marker2.png',
-			markerSize: new kakao.maps.Size(232, 99),
-			markerPos: { offset: new kakao.maps.Point(116, 99) }
-		},
-		{
-			title: 'CITYHALL',
-			latlng: new kakao.maps.LatLng(37.5662952, 126.9779451),
-			markerImg: 'marker3.png',
-			markerSize: new kakao.maps.Size(232, 99),
-			markerPos: { offset: new kakao.maps.Point(116, 99) }
+			title: 'OFFICE',
+			latlng: new kakao.maps.LatLng(37.49929057702219, 127.03613179157935),
+			markerImg: 'marker1.png',
+			markerSize: new kakao.maps.Size(55, 55),
+			markerPos: { offset: new kakao.maps.Point(55, 55) }
 		}
 	]);
 	const { latlng, markerImg, markerSize, markerPos } = ref_info.current[Index];
