@@ -1,3 +1,4 @@
+import {   } from 'react-icons/fa';
 import { useEffect, useRef } from 'react';
 import Layout from '../common/Layout';
 import Pic from '../common/Pic';
@@ -129,7 +130,8 @@ export default function Youtube() {
 		<div className="video-grid">
 			{Vids?.slice(0, 8).map((vid, idx) => (
 				<article key={idx} className="video-card">
-					<p className="round">●</p>
+   <p className="round">
+  <i className="fa-solid fa-circle"></i> </p>
 					<h3>
 						<Link to={'/youtube/' + vid.id}>{shortenText(vid.snippet.title, 53)}</Link>
 					</h3>

@@ -1,7 +1,7 @@
 export default function Footer() {
 	return (
 		<footer className='footer'>
-			<h1>ALPACO</h1>
+			<h1>AVALLION</h1>
 
 			<section>
 				<ul>
@@ -10,7 +10,7 @@ export default function Footer() {
 					<li>CONTACT</li>
 					<li>POLICY</li>
 				</ul>
-				<p>2024 ALPACO &copy; ALL RIGHTS RESERVED.</p>
+				<p>2024 AVALLION. ALL RIGHTS RESERVED.</p>
 			</section>
 		</footer>
 	);

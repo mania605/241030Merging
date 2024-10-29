@@ -227,9 +227,32 @@ animation: ani 1s ease 0.3s 1;
 	text-align: left;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between; /* 상하 정렬 맞추기 */
+	justify-content: space-between; 
 	height: 100%; /* 카드의 높이를 동일하게 설정 */
+  aspect-ratio: 3 / 4; /* 비율을 3:4로 설정 */
+	 h3 {
+		font-size: 1rem;
+		color: #a5a2a2;
+		margin-bottom: 10px;
+		line-height: 1.2;
+	}
+	.txt p {
+		font-size: 0.8rem;
+		color: #555;
+		margin-bottom: 8px;
+		line-height: 1.3;
+	}
+	.txt span {
+		font-size: 0.7rem;
+		color: #888;
+	}
+}
 
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .round {
@@ -237,27 +260,6 @@ animation: ani 1s ease 0.3s 1;
 	color: #222;
 	padding: 0px;
 	margin-left: 0px;
-}
-
-.video-card h3 {
-	font-size: 1rem;
-	color: #a5a2a2;
-	margin-bottom: 10px;
-	line-height: 1.2;
-}
-
-
-.video-card .txt p {
-	font-size: 0.8rem;
-	color: #555;
-	margin-bottom: 8px;
-	line-height: 1.3;
-}
-
-
-.video-card .txt span {
-	font-size: 0.7rem;
-	color: #888;
 }
 
 .thumb {
