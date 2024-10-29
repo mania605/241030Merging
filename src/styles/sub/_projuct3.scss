@@ -1,0 +1,62 @@
+.product-page {
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	.content-container{
+		position: relative;
+		z-index: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem;
+		.center-text {
+			position: absolute;
+			color: #fff;
+			font-size: 2.5rem;
+			font-family: 'armini', sans-serif;
+			text-align: center;
+			margin-top: -50px;
+		}
+		.productList {
+			position: relative;
+			width: 100vw;
+			height: 150vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-top: 150px;
+			.pic {
+				width: 100px; /* 이미지 크기 조정 */
+				height: 100px; // 높이 값 오토로 놓으면 반영할 부모 값이 없어서 이미지 안보임
+				border-radius: 10px;
+				overflow: hidden;
+			}
+			h3{
+				font-family: 'armini';
+				font: #fe0293;
+			}
+		}
+	}
+}
+@media screen and (max-width: $tablet) {
+	.product {
+		.productList {
+			article {
+				width: 47%;
+				margin-bottom: 50px;
+				.pic {
+					height: 40vw;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $mobile) {
+	.product {
+		.productList {
+			article {
+				width: 100%;
+			}
+		}
+	}
+}

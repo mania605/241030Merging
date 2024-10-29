@@ -1,11 +1,12 @@
-//시도해본 파일 정리
+//백그라운드 반응형 적용과 제품페이지 디자인 결정 및 치환
 import { useEffect, useState } from 'react';
 import Layout from '../common/Layout';
 import BackgroundVideo from '../sub/BackgroundVideo';
 import Pic from '../common/Pic';
 
+
 export default function Product() {
-    const [Flickr, setFlickr] = useState([]);
+    const [ Flickr, setFlickr ] = useState([]);
     console.log(Flickr);
 
     useEffect(() => {
@@ -19,29 +20,20 @@ export default function Product() {
             .then(data => data.json())
             .then(json => {
                 setFlickr(json.photos.photo);
-            });
+        });
     }, []);
-
-    const totalImages = Flickr.length;
-    const angleStep = 360 / totalImages; // 각 이미지의 간격을 360도에서 나눈 각도로 설정
 
     return (
         <div className="product-page">
-            <BackgroundVideo />
+            <BackgroundVideo /> 
             <Layout title={"Product"}>
-                <div className="center-text">AVALLION UNIVERSE</div>
-                <section className="productList">
+                <section className='productList'>
                     {Flickr.map((data, idx) => {
-                        const rotation = angleStep * idx; // 각 이미지의 회전 각도 계산
                         return (
-                            <article key={idx} style={{
-                                    position: "absolute",
-                                    transform: `rotate(${rotation}deg) translate(20vw) rotate(-${rotation}deg)`,
-                                }}>
-                                    
-                                <Pic
+                            <article key={idx}>
+                                <Pic 
                                     src={`https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_z.jpg`}
-                                    className="pic"
+                                    className = 'pic'
                                 />
                                 <h3>{data.title}</h3>
                             </article>
