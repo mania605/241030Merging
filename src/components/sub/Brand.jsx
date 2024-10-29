@@ -1,6 +1,15 @@
-import Layout from '../components/Layout';
+import Layout from '../common/Layout';
+// import memberData from '../../data/memberData';
+import Pic from '../common/Pic';
+import MaskBox from '../common/MaskBox';
+// import MaskText from '../common/MaskText';
+import Content from '../common/Content';
 
-export default function BrandStory() {
+import { useRef, useEffect } from 'react'; 
+
+export default function Brand() {
+
+	
 	const memberData = [
 		{ name: 'Angelo', text: 'CEO', pic: '/CEO.jpg' },
 		{ name: 'Peter', text: 'Creative', pic: '/creative.png' },
@@ -8,8 +17,31 @@ export default function BrandStory() {
 		{ name: 'Perfume', text: 'Best Product', pic: '/p1.jpg' }
 	];
 
+	const slip = useRef(null);
+
+	useEffect(() => {
+		if (slip.current) {
+			slip.current.classList.remove('on');
+		}
+
+		setTimeout(() => {
+			if (slip.current) {
+				slip.current.classList.add('on');
+			}
+		}, 500);
+	}, []);
+
 	return (
-		<Layout title='BrandStory'>
+		<Layout title={'BRAND'}>
+			
+			{/* <MaskText delay={1}>						Lorem</MaskText>
+			<br />
+			<MaskText delay={1.5} style={{ marginBottom: 80 }}>
+		ipsum.
+			</MaskText> */}
+
+
+		<Content delay={1}>
 			<article className='ceoBox'>
 				<div className='story'>
 					<nav className='ceoTitle'>
@@ -24,7 +56,7 @@ export default function BrandStory() {
 					</nav>
 				</div>
 
-				<div className='ceoImg'>
+				<div className='ceoImg' ref={slip}>
 					<img className='ceo' src={memberData[0].pic} alt={memberData[0].name} />
 				</div>
 			</article>
@@ -46,6 +78,12 @@ export default function BrandStory() {
 					<p>완벽한 서포트를 꿈꾸는 아발론</p>
 				</div>
 			</section>
+
+
+			<MaskBox className='picWrapper' style={{ width: '50%', height: '65vh' }} delay={1}>
+						<Pic style={{ width: '100%', height: '100%' }} src={'/' + memberData[0].pic} />
+					</MaskBox>
+
 
 			<section className='mid_2'>
 				{memberData.slice(1, 3).map((data, idx) => (
@@ -71,13 +109,13 @@ export default function BrandStory() {
 						<br /> Classified Perfume
 					</p>
 					<div
-						className='buttons
-					'>
+						className='buttons'>
 						<button>information</button>
 						<button>pictures</button>
 					</div>
 				</div>
 			</section>
+		</Content>
 		</Layout>
 	);
 }

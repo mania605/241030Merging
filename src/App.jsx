@@ -1,8 +1,8 @@
 import Footer from './components/common/Footer';
 import Header from './components/common/Header';
 import Home from './components/main/Home';
-// import Product from './components/sub/Product';
-// import BrandStory from './components/sub/Brand';
+import Product from './components/sub/Product';
+import Brand from './components/sub/Brand';
 import Youtube from './components/sub/Youtube';
 import Contact from './components/sub/Contact';
 import { Route, Routes, useLocation } from 'react-router-dom'; 
@@ -22,9 +22,8 @@ export default function App() {
 			<AnimatePresence mode='wait'>
 				<Routes location={location} key={location.pathname}>
 					<Route path='/' element={<Home />} />
-					{/* <Route path='/brand' element={<BrandStory />} /> */}
-					{/* <Route path='/member' element={<Member />} />  */}
-					{/* <Route path='/product' element={<Product />} /> */}
+					<Route path='/brand' element={<Brand />} />
+ 					<Route path='/product' element={<Product />} />
 					<Route path='/youtube' element={<Youtube />} />
 					<Route path='/contact' element={<Contact />} />
 				</Routes>
