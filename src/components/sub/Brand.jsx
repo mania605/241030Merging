@@ -11,7 +11,7 @@ export default function Brand() {
 
 	
 	const memberData = [
-		{ name: 'Angelo', text: 'CEO', pic: '/CEO.jpg' },
+		{ name: 'Angelo', text: 'CEO', pic: '/ceo.jpg' },
 		{ name: 'Peter', text: 'Creative', pic: '/creative.png' },
 		{ name: 'Paul', text: 'Model', pic: '/model.png' },
 		{ name: 'Perfume', text: 'Best Product', pic: '/p1.jpg' }
@@ -33,7 +33,7 @@ export default function Brand() {
 
 	return (
 		<Layout title={'BRAND'}>
-			
+
 			{/* <MaskText delay={1}>						Lorem</MaskText>
 			<br />
 			<MaskText delay={1.5} style={{ marginBottom: 80 }}>
