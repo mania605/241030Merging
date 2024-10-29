@@ -32,6 +32,7 @@ export default function Youtube() {
 
 	return (
 		<Layout title={'YOUTUBE'}>
+
 		<div className="wrap">
 		<ul className="auto">
 			<li className="btnStart"><i className="fas fa-play"></i></li>
@@ -64,7 +65,7 @@ export default function Youtube() {
 				<div className="inner">
 					<div className="con">
 						<img src="/thumb1.png" alt="AVALLION" />
-						<h2>AVALLION</h2>
+						<h3>AVALLION</h3>
 						<p>STEP INTO POSSIBILITIES</p>
 					</div>
 				</div>
@@ -77,7 +78,7 @@ export default function Youtube() {
 					<div className="con">
 					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
 						<img src="/thumb2.png" alt="PERFUME DESIGNER" />
-						<h2>CREMA NERA</h2>
+						<h3>CREMA NERA</h3>
 						<p>HIGH-PRECISION SKIN REVIVAL</p>
 					</div>
 				</div>
@@ -90,7 +91,7 @@ export default function Youtube() {
 					<div className="con">
 					<a href=" https://youtu.be/0XPfwjw0z-Q?si=n7z9YK4bfkZoo7dL"></a>
 						<img src="/thumb3.png" alt="LIMITLESS" />
-						<h2>LIMITLESS POTENTIAL</h2>
+						<h3>LIMITLESS POTENTIAL</h3>
 						<p>FIRST FRAGRANCE</p>
 									</div>
 				</div>
@@ -100,7 +101,7 @@ export default function Youtube() {
  				<div className="inner">
 					<div className="con">
  						<img src="/thumb4.png" alt="AVALLION" />
-						<h2>AVALLION</h2>
+						<h3>AVALLION</h3>
 						<p>FIRST FRAGRANCE</p>
 					</div>
 				</div>
@@ -110,7 +111,7 @@ export default function Youtube() {
  				<div className="inner">
 					<div className="con">
 						<img src="/thumb5.png" alt="STEP INTO POSSIBILITIES" />
-						<h2>STEP INTO POSSIBILITIES</h2>
+						<h3>STEP INTO POSSIBILITIES</h3>
 						<p>BRAND STORY</p>
 					</div>
 				</div>

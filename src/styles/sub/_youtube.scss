@@ -5,19 +5,11 @@ main {
 	min-height: 120vh;
 }
 
-//main페이지 전용 스타일
-main.main {
-	width: 100%;
-	padding: 0px;
-}
- 
-
-
 
 .wrap {
 	border-top: 10px solid rgb(24, 24, 24);
  	width: 100%;
-	height: 80vh;
+	height: 70vh;
 	overflow: hidden;
 	position: relative;
 	box-sizing: border-box;
@@ -41,7 +33,7 @@ main.main {
 		position: absolute;
 		bottom: 60px;
 		left: 60px; /* '60 px'에서 공백 제거 */
-		z-index: 20;
+		z-index: 30;
 		li {
 			float: left;
 			margin-right: 20px;
@@ -83,7 +75,7 @@ main.main {
 	height: 100%;
 	.swiper-slide {
 		width: 500px;
-		height: 500px;
+		height: 330px;
 		position: relative;
 		top: 50%;
 		margin-top: -230px;
@@ -157,6 +149,7 @@ animation: ani 1s ease 0.3s 1;
 	z-index: 10;
 	img {
 		width: 100%;
+		aspect-ratio: 16/9;
 		h2 {
 			font-weight: normal;
 			font-size: 40px;
