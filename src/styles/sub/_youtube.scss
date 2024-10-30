@@ -1,23 +1,22 @@
 main { 
-	padding: 10vh 0vw; 
+	padding: 0vh 0vw; 
 }
  
 
 .wrap {
-	border-top: 10px solid rgb(24, 24, 24);
-	border-bottom: 10px solid rgb(24, 24, 24);
+
  	width: 100%;
-	height: 100vh;
+	height: 80vh;
 	overflow: hidden;
 	position: relative;
 	box-sizing: border-box;
-	background-image: linear-gradient(45deg, #494949, #312727);
-
+ 
 	h1 {
 		font-weight: normal;
 		font-size: 24px;
 		font-family: 'Roboto';
 		color: #fff;
+		opacity: 0.3;
 		letter-spacing: 1px;
 		position: absolute;
 		left: 50px; /* '50 px'에서 공백 제거 */
@@ -91,7 +90,7 @@ main {
 
 
 	.swiper-pagination{
-	color: #eee !important;
+	color: #eee ;
 }
 	/*페이지네이션*/
 .swiper-pagination-fraction {
@@ -184,9 +183,6 @@ animation: ani 1s ease 0.3s 1;
 }
  
 
-
-
-
 .wrap .swiper-wrapper .swiper-slide .inner .con h2 ::after {
 	content: '';
 	display: block;
@@ -204,7 +200,7 @@ animation: ani 1s ease 0.3s 1;
 .swiper-wrapper .swiper-slide .inner .con p {
 	font-weight: normal;
 	font-size: 13px;
-	font-family: 'arial';
+	font-family: 'Roboto';
 	line-height: 1.3;
 	color: #aaa;
 	letter-spacing: 1px;
@@ -236,7 +232,7 @@ animation: ani 1s ease 0.3s 1;
 	height: 100%; /* 카드의 높이를 동일하게 설정 */
   aspect-ratio: 3 / 4; /* 비율을 3:4로 설정 */
 	.round {
-		font: 900 2rem/1 'Arial';
+		font: 900 2rem/1 'Roboto';
 		color: #222;
 		padding: 0px;
 		margin-left: 0px;
@@ -282,6 +278,9 @@ animation: ani 1s ease 0.3s 1;
 
 /* 반응형: 화면이 좁아질 때 2열로 배치 */
 @media screen and (max-width: $tablet) {
+	.wrap{
+		width: 100%;
+	}
     .video-grid {
 			 grid-template-columns: repeat(2, 1fr);
     }
@@ -290,6 +289,9 @@ animation: ani 1s ease 0.3s 1;
 
 /* 반응형: 더 좁아질 때 1열로 배치 */
 @media screen and (max-width: $mobile) {
+	.wrap{
+		width: 47%;
+	}
     .video-grid {
 			grid-template-columns: repeat(1, 1fr);
     }

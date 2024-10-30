@@ -1,5 +1,4 @@
 import {   } from 'react-icons/fa';
-// import { useEffect, useRef } from 'react';
 import Layout from '../common/Layout';
 import Pic from '../common/Pic';
 import useShortenText from '../../hooks/useShortenText';
@@ -22,19 +21,13 @@ export default function Youtube() {
 
  
 
-	// const swiperRef = useRef(null); // Swiper 인스턴스를 참조하기 위한 useRef
-
-	// useEffect(() => {
-	// 	// 자동 재생 버튼 기능
-	// 	document.querySelector('.btnStart').addEventListener('click', () => swiperRef.current.autoplay.start());
-	// 	document.querySelector('.btnStop').addEventListener('click', () => swiperRef.current.autoplay.stop());
-	// }, []);
-
 
 	return (
-		<Layout title={'YOUTUBE'}>
+		<Layout title={''}>
+
 
 		<div className="wrap">
+		<h1><span>YOUTUBE </span> </h1>
 		<ul className="auto">
 			{/* <li className="btnStart"><i className="fas fa-play"></i></li>
 			<li className="btnStop"><i className="fas fa-pause"></i></li> */}

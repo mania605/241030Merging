@@ -4,8 +4,7 @@ import useThrottle from '../../hooks/useThrottle';
 import { useZustandStore } from '../../hooks/useZustand';
 import { Link } from 'react-router-dom';
 import { FaUserGroup } from 'react-icons/fa6';
-import { FaImages, FaYoutube } from 'react-icons/fa';
-import { RiCustomerService2Fill } from 'react-icons/ri';
+import { FaImages, FaYoutube, FaEnvelope } from 'react-icons/fa';
 import { IoDocumentText } from 'react-icons/io5';
 
 export default function MobileMenu() {
@@ -39,31 +38,31 @@ export default function MobileMenu() {
 				<li>
 					<Link to='/brand'>
 						<FaUserGroup />
-						BRAND
+						Brand
 					</Link>
 				</li>
 				<li>
 					<Link to='/product'>
 						<FaImages />
-						PRODUCT
+						Product
 					</Link>
 				</li>
 				<li>
 					<Link to='/youtube'>
 						<FaYoutube />
-						YOUTUBE
+						Youtube
 					</Link>
 				</li>
 				<li>
 					<Link to='/contact'>
-						<RiCustomerService2Fill />
-						CONTACT
+						<FaEnvelope />
+						Contact
 					</Link>
 				</li>
 				<li>
 					<Link to='/posts'>
 						<IoDocumentText />
-						POSTS
+						Posts
 					</Link>
 				</li>
 			</ul>

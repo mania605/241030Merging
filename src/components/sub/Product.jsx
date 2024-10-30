@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Layout from '../common/Layout';
 import BackgroundVideo from './BackgroundVideo';
-import Pic from '../common/Pic';
+// import Pic from '../common/Pic';
 
 export default function Product() {
     const [Flickr, setFlickr] = useState([]);

@@ -1,8 +1,8 @@
 .footer {
 	width: 100%;
 	padding: 100px 15vw;
-	background: #333;
-	color: #777;
+	background: #000000;
+	color: rgba(var(--keyRGB), 2);
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -11,7 +11,7 @@
 	h1 {
 		display: flex;
 		align-items: center;
-		font: 600 1.6rem/1 'orbitron';
+		font: 600 1.6rem/1 'amiri' #FFF;
 	}
 
 	section {
