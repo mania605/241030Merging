@@ -1,4 +1,4 @@
-import vid from '../assets/tech2.mp4';
+import vid from '../../assets/tech2.mp4';
 
 const BackgroundVideo = () => {
     return (
@@ -11,4 +11,3 @@ const BackgroundVideo = () => {
         };
 
 export default BackgroundVideo;
-~
