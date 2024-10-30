@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import Layout from '../components/Layout';
+import Layout from '../common/Layout';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 

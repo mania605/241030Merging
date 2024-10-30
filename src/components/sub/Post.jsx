@@ -1,4 +1,4 @@
-import Layout from '../components/common/Layout';
+import Layout from '../common/Layout';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
