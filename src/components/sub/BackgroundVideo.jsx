@@ -1,5 +1,4 @@
 import vid from '../../assets/tech2.mp4';
-
 const BackgroundVideo = () => {
     return (
         <div className='backgroundVideo'>
@@ -9,5 +8,4 @@ const BackgroundVideo = () => {
             </div>
             );
         };
-
 export default BackgroundVideo;

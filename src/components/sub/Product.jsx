@@ -1,35 +1,28 @@
-//시도해본 파일 정리
 import { useEffect, useState } from 'react';
 import Layout from '../common/Layout';
-import BackgroundVideo from '../sub/BackgroundVideo';
+import BackgroundVideo from './backgroundVideo';
 import Pic from '../common/Pic';
-
 export default function Product() {
     const [Flickr, setFlickr] = useState([]);
     console.log(Flickr);
-
     useEffect(() => {
         const method = 'flickr.people.getPhotos';
         const flickr_api = import.meta.env.VITE_FLICKR_API;
         const myID = '201491599@N03';
         const num = 9;
         const url = `https://www.flickr.com/services/rest/?method=${method}&api_key=${flickr_api}&user_id=${myID}&per_page=${num}&nojsoncallback=1&format=json`;
-
         fetch(url)
             .then(data => data.json())
             .then(json => {
                 setFlickr(json.photos.photo);
             });
     }, []);
-
     const totalImages = Flickr.length;
     const angleStep = 360 / totalImages; // 각 이미지의 간격을 360도에서 나눈 각도로 설정
-
     return (
         <div className="product-page">
-
-            <Layout title={"Product"}>
             <BackgroundVideo />
+            <Layout title={"Product"}>
                 <div className="center-text">AVALLION UNIVERSE</div>
                 <section className="productList">
                     {Flickr.map((data, idx) => {

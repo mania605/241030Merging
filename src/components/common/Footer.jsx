@@ -4,7 +4,7 @@ export default function Footer() {
 			<h1>AVALLION</h1>
 
 			<section>
-				<ul>
+			<ul>
 					<li>HOME</li>
 					<li>SITEMAP</li>
 					<li>CONTACT</li>
@@ -14,4 +14,7 @@ export default function Footer() {
 			</section>
 		</footer>
 	);
-}
+} 
+
+
+ 
