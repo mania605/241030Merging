@@ -1,6 +1,6 @@
 import Layout from '../common/Layout';
 import Visual from './Visual';
-import ScrollSpy from '../main/ScrollSpy'
+ 
 
 
 
@@ -10,7 +10,9 @@ export default function Home() {
 		
 		<Layout title={'HOME'}>
 
-			<ScrollSpy />
+			<Visual />
+{/* 
+			<ScrollSpy /> */}     
 		</Layout>
 
 

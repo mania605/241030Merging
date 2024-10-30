@@ -32,20 +32,20 @@ export default function MobileMenu() {
 	return (
 		<motion.aside className='mobileMenu' onClick={setMenuClose} initial={initial} animate={animate} exit={exit} transition={transition}>
 			<h1>
-				<Link to='/'>ALPACO</Link>
+				<Link to='/'>AVALLION</Link>
 			</h1>
 
 			<ul>
 				<li>
-					<Link to='/members'>
+					<Link to='/brand'>
 						<FaUserGroup />
-						MEMBERS
+						BRAND
 					</Link>
 				</li>
 				<li>
-					<Link to='/gallery'>
+					<Link to='/product'>
 						<FaImages />
-						GALLERY
+						PRODUCT
 					</Link>
 				</li>
 				<li>

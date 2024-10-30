@@ -7,15 +7,13 @@
 $tablet: 999px;
 $mobile: 599px;
 :root{
-  --keyRGB: 40,40,40;
+  --keyRGB: 5,5,5;
 }
-
 //testtest
 //rgba(var(--keyRGB), 0.5;
 //rgba(40,40,40,0/5);
 
-//black: 40,40,40;
-//grey: 20,20,20;
+//black: 40,40,40; 
 //white;255, 255, 255;
 
 
@@ -30,7 +28,6 @@ $mobile: 599px;
 
 .test{
   background: rgb(255, 255, 255);
-
 }
 
 //common
@@ -46,13 +43,13 @@ $mobile: 599px;
 //main
 @import './main/home';
 @import './main/visual';
-@import './main/scrollSpy';
+// @import './main/scrollSpy';
 
 //sub
 // @import './sub/member';
 @import './sub/brand';
-@import './sub/youtube'; 
 @import './sub/product'; 
+@import './sub/youtube'; 
 @import './sub/post'
 
 

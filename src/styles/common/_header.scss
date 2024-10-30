@@ -5,13 +5,20 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #1a1919;
 
 	h1 {
-		font: 700 1.2rem/1 'orbitron';
-		color: rgba(var(--keyRGB), 1);
+		font: 900 2rem/1 'amiri';
+
 		letter-spacing: 1px;
+
+		a{
+			color: #888;
+		}
 	}
+
+
+
 
 	nav {
 		display: flex;
@@ -21,11 +28,11 @@
 		.gnb {
 			display: flex;
 			gap: 50px;
-			font: 600 0.8rem/1 'raleway';
+			font: 400 0.8rem/1 'Roboto';
 			color: #888;
 
 			li.on {
-				color: rgba(var(--keyRGB), 1);
+				color: rgba(var(--keyRGB), 2);
 			}
 		}
 

@@ -5,7 +5,7 @@ export default function Footer() {
 
 			<section>
 				<ul>
-					<li>FAMILY SITE</li>
+					<li>HOME</li>
 					<li>SITEMAP</li>
 					<li>CONTACT</li>
 					<li>POLICY</li>

@@ -35,7 +35,7 @@ export default function SplitText({ children = '', style, interval = 0.1, delay 
 		<h2 style={titStyle}>
 			{textArr.map((el, idx) => (
 				<motion.span
-					style={{ display: 'inline-block' }}
+					style={{ display: 'inline-block' }} //	// 스타일을 부모에서 받아오도록 설정
 					key={idx}
 					initial={init}
 					animate={active}

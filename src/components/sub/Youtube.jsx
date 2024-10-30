@@ -1,5 +1,5 @@
 import {   } from 'react-icons/fa';
-import { useEffect, useRef } from 'react';
+// import { useEffect, useRef } from 'react';
 import Layout from '../common/Layout';
 import Pic from '../common/Pic';
 import useShortenText from '../../hooks/useShortenText';
@@ -121,7 +121,7 @@ export default function Youtube() {
 		{/* 네비게이션 및 페이지네이션 요소 */}
 		<div className="swiper-button-next"></div>
 		<div className="swiper-button-prev"></div>
-		<div className="swiper-pagination"></div>
+		{/* <div className="swiper-pagination"></div> */}
 	</div>
 
 	<Content delay={1}>

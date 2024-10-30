@@ -1,8 +1,8 @@
-import vid from '../../assets/tech3_1.mp4'
+import vid from '../assets/tech2.mp4';
 
 const BackgroundVideo = () => {
     return (
-        <div className='BackgroundVideo'>
+        <div className='backgroundVideo'>
             <video autoPlay loop muted>
                 <source src={vid} type="video/mp4" />
             </video> 
@@ -11,3 +11,4 @@ const BackgroundVideo = () => {
         };
 
 export default BackgroundVideo;
+~

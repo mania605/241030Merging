@@ -35,7 +35,6 @@ export default function Header() {
           				idx === 0 ? '/contact' :
           				idx === 1 ? '/posts' :
           				idx === 2 ? '/youtube' : '#'}></a>
-									
 								<Data />
 							</li>
 						))}

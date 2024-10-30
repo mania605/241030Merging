@@ -1,44 +1,59 @@
-//백그라운드 반응형 적용과 제품페이지 디자인 결정 및 치환
-// .video-container {
-//     position: relative;
-//     width: 100%;
-//     height: 100vh;
-//     overflow: hidden;
-// }
+.product-page{
 
-video {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transform: translate(-50%, -50%);
-	z-index: -1;
-}
+	.center-text {
+		position: absolute;
+		color: #fff;
+		font-size: 2.5rem;
+		font-family: 'armini', sans-serif;
+		text-align: center;
+		margin-top: -50px;
+	}
 
-.product-page {
-	position: relative;
-	z-index: 1;
-	color: #fff;
-}
+	.productList {
+		position: relative;
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		// text-align: center;
+		// margin-left: -170px;
+		margin-top: 150px;
 
-@media screen and (max-width: $tablet) {
-	.backgroundVideo {
-		article {
-			width: 47%;
-			margin-bottom: 50px;
-			.pic {
-				height: 40vw;
-			}
+		.pic {
+		position: relative;
+		width: 100px; /* 이미지 크기 조정 */
+		height: 100px; // 높이 값 오토로 놓으면 반영할 부모 값이 없어서 이미지 안보임
+		border-radius: px;
+		overflow: hidden;
+
+		}
+
+		h3{
+			font-family: 'armini';
 		}
 	}
 }
 
+@media screen and (max-width: $tablet) {
+	.product {
+		.productList {
+			article {
+				width: 47%;
+				margin-bottom: 50px;
+				.pic {
+					height: 40vw;
+				}
+			}
+		}
+	}
+}
 @media screen and (max-width: $mobile) {
-	backgroundVideo {
-		article {
-			width: 100%;
+	.product {
+		.productList {
+			article {
+				width: 100%;
+			}
 		}
 	}
 }

@@ -1,62 +1,55 @@
 import Layout from '../common/Layout';
 // import memberData from '../../data/memberData';
-import Pic from '../common/Pic';
-import MaskBox from '../common/MaskBox';
+// import Pic from '../common/Pic';
+// import MaskBox from '../common/MaskBox';
 // import MaskText from '../common/MaskText';
-import Content from '../common/Content';
-
+// import Content from '../common/Content';
+import SplitText from '../common/SplitText';
 import { useRef, useEffect } from 'react'; 
 
 export default function Brand() {
-
-	
 	const memberData = [
-		{ name: 'Angelo', text: 'CEO', pic: '/ceo.jpg' },
+		{ name: 'Angelo', text: 'CEO', pic: '/CEO.jpg' },
 		{ name: 'Peter', text: 'Creative', pic: '/creative.png' },
 		{ name: 'Paul', text: 'Model', pic: '/model.png' },
 		{ name: 'Perfume', text: 'Best Product', pic: '/p1.jpg' }
 	];
 
-	const slip = useRef(null);
+	const ceoTitleRef = useRef(null);
+	const ceoSubTitleRef = useRef(null);
+	const ceoImgRef = useRef(null);
 
 	useEffect(() => {
-		if (slip.current) {
-			slip.current.classList.remove('on');
-		}
+		// 초기화
+		if (ceoTitleRef.current) ceoTitleRef.current.classList.remove('on');
+		if (ceoSubTitleRef.current) ceoSubTitleRef.current.classList.remove('on');
+		if (ceoImgRef.current) ceoImgRef.current.classList.remove('on');
 
+		// 각 요소에 'on' 클래스 추가
 		setTimeout(() => {
-			if (slip.current) {
-				slip.current.classList.add('on');
-			}
+			if (ceoTitleRef.current) ceoTitleRef.current.classList.add('on');
+			if (ceoSubTitleRef.current) ceoSubTitleRef.current.classList.add('on');
+			if (ceoImgRef.current) ceoImgRef.current.classList.add('on');
 		}, 500);
 	}, []);
 
 	return (
-		<Layout title={'BRAND'}>
-
-			{/* <MaskText delay={1}>						Lorem</MaskText>
-			<br />
-			<MaskText delay={1.5} style={{ marginBottom: 80 }}>
-		ipsum.
-			</MaskText> */}
-
-
-		<Content delay={1}>
+		<Layout title=''>
 			<article className='ceoBox'>
 				<div className='story'>
-					<nav className='ceoTitle'>
+					<nav className='ceoTitle' ref={ceoTitleRef}>
 						향기의 권위자 Angelo의
 						<br /> 단독 Brand 론칭
 					</nav>
-					<nav className='ceoSubTitle'>
+					<nav className='ceoSubTitle' ref={ceoSubTitleRef}>
 						<p>남자의 향을 완성하다</p>
-						<p>since 1990</p>
+						<p>SINCE 1990</p>
 						<p>젊은날의 성공을 함께 전달하다</p>
-						<p>AVALLION의 Image</p>
+						<p>AVALLION의 IMAGE</p>
 					</nav>
 				</div>
 
-				<div className='ceoImg' ref={slip}>
+				<div className='ceoImg' ref={ceoImgRef}>
 					<img className='ceo' src={memberData[0].pic} alt={memberData[0].name} />
 				</div>
 			</article>
@@ -78,12 +71,6 @@ export default function Brand() {
 					<p>완벽한 서포트를 꿈꾸는 아발론</p>
 				</div>
 			</section>
-
-
-			<MaskBox className='picWrapper' style={{ width: '50%', height: '65vh' }} delay={1}>
-						<Pic style={{ width: '100%', height: '100%' }} src={'/' + memberData[0].pic} />
-					</MaskBox>
-
 
 			<section className='mid_2'>
 				{memberData.slice(1, 3).map((data, idx) => (
@@ -109,13 +96,13 @@ export default function Brand() {
 						<br /> Classified Perfume
 					</p>
 					<div
-						className='buttons'>
+						className='buttons
+					'>
 						<button>information</button>
 						<button>pictures</button>
 					</div>
 				</div>
 			</section>
-		</Content>
 		</Layout>
 	);
 }
