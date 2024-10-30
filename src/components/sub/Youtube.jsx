@@ -149,7 +149,7 @@ export default function Youtube() {
     <p className="round">
       <i className="fa-solid fa-circle"></i>
     </p>
-    <h3>{shortenText(vid.snippet.title, 53)}</h3>
+    <h3>{shortenText(vid.snippet.title, 20)}</h3>
     <div className="txt">
       <p>{shortenText(vid.snippet.description, 50)}</p>
       <span>{combineText(vid.snippet.publishedAt.split('T')[0], '-', '.')}</span>

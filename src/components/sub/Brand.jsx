@@ -9,7 +9,7 @@ import { useRef, useEffect } from 'react';
 
 export default function Brand() {
 	const memberData = [
-		{ name: 'Angelo', text: 'CEO', pic: '/CEO.jpg' },
+		{ name: 'Angelo', text: 'CEO', pic: '/ceo.jpg' },
 		{ name: 'Peter', text: 'Creative', pic: '/creative.png' },
 		{ name: 'Paul', text: 'Model', pic: '/model.png' },
 		{ name: 'Perfume', text: 'Best Product', pic: '/p1.jpg' }
