@@ -5,6 +5,10 @@ import Product from './components/sub/Product';
 import Brand from './components/sub/Brand';
 import Youtube from './components/sub/Youtube';
 import Contact from './components/sub/Contact';
+import Post from './components/sub/Post';
+import PostDetail from './components/sub/PostDetail';
+import PostAdd from './components/sub/PostAdd';
+import PostEdit from './components/sub/PostEdit';
 import { Route, Routes, useLocation } from 'react-router-dom'; 
 import { AnimatePresence } from 'framer-motion';
 import MobileMenu from './components/common/MobileMenu';
@@ -28,6 +32,10 @@ export default function App() {
 					<Route path='/youtube' element={<Youtube />} />
 					<Route path='/contact' element={<Contact />} />
 					<Route path='/BackgroundVideo' element={<BackgroundVideo />} />
+					<Route path='/post' element={<Post />} />
+					<Route path='/post/:slug' element={<PostDetail />} />
+					<Route path='/post-add' element={<PostAdd />} />
+					<Route path='/post-edit/:slug' element={<PostEdit />} />
 				</Routes>
 			</AnimatePresence>
 
