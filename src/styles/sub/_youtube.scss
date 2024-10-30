@@ -1,37 +1,42 @@
-main { 
-	padding: 0vh 0vw; 
+main {
+	width: 100%;
+	padding: 0; 
 }
  
-
+	.content {
+		padding: 0vh 5vw;
+	}
+ 
 .wrap {
-
- 	width: 100%;
-	height: 80vh;
+	width: 100%;
+	height: 100vh;
 	overflow: hidden;
 	position: relative;
 	box-sizing: border-box;
+	margin-bottom: 20vh;
  
+
 	h1 {
 		font-weight: normal;
 		font-size: 24px;
-		font-family: 'Roboto';
+		font-family: 'orbitron';
 		color: #fff;
-		opacity: 0.3;
 		letter-spacing: 1px;
 		position: absolute;
-		left: 50px; /* '50 px'에서 공백 제거 */
-		top: 70px; /* '70 px'에서 공백 제거 */
+		left: 50px;
+		top: 70px;
+
 		span {
 			opacity: 0.8;
-			
 		}
 	}
-	/* 자동 재생 버튼 */
+
 	.auto {
 		position: absolute;
 		bottom: 60px;
-		left: 60px; /* '60 px'에서 공백 제거 */
-		z-index: 30;
+		left: 60px;
+		z-index: 20;
+
 		li {
 			float: left;
 			margin-right: 20px;
@@ -40,132 +45,141 @@ main {
 			font-size: 20px;
 			opacity: 0.9;
 			transition: all 0.5s;
-			:hover {
-				/* 마우스 호버 시 진해지면서 1.4 배 확대 */
+
+			&:hover {
 				opacity: 1;
-				transform: scale(1.4); /* 'seale' -> 'scale', 오타 수정 */
-			} 
+				transform: scale(1.4);
+			}
 		}
 	}
-	.swiper-button-prev {
-		left: auto; /*기존left값 초기화*/
-		right: 100px;
-		top: auto;
-		bottom: 50px;
-		filter: grayscale(100%) brightness(3); /*버튼 색을 흰색으로 변경*/
-		transform: scale(0.5);
-	}
-	.swiper-button-next {
-		left: auto; /*기존left값 초기화*/
-		right: 60px;
-		top: auto;
-		bottom: 50px;
-		filter: grayscale(100%) brightness(3); /*버튼 색을 흰색으로 변경*/
-		transform: scale(0.5);
-	}
-	
-} 
- 
 
-/* 기본 슬라이드 프레임 */
-.swiper-wrapper {
-	width: 100%;
-	height: 100%;
-	.swiper-slide {
-		width: 800px;
-		height: 550px;
-		position: relative;
-		top: 50%;
-		margin-top: -230px;
-		.inner {
-			width: 100%;
-			height: 100%;
-			background: #fff;
-			padding: 30px;
-			box-sizing: border-box;
-			opacity: 0.4;
-			transition: 1s;
-		} 
-	}
-
-
-	.swiper-pagination{
-	color: #eee ;
-}
-	/*페이지네이션*/
-.swiper-pagination-fraction {
-	bottom: auto!important; /*기존 값 초기화*/
-	top: 50px !important;
-	left: auto !important; /*기존 값 초기화*/
-	right: 50px !important;
-	width: auto !important; /*기존 값 초기화*/
-	font-size: 16px;
-	font-family: 'Roboto';
-	letter-spacing: 1px;
-	color: #eee !important;
-	span:nth-of-type(1) {
-		font-size: 30px;
-		color: #fff !important; 
-
-		
-	}
-} 
-  
-
-.swiper-slied-activ .inner {
-	/*가운데 패널*/
-	opacity: 1;
-	box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
-}
-
-
-.swiper-slide .inner::before,
-.swiper-slide .inner::after {
-	/*좌우 패널*/
-	content: '';
-	display: block;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	opacity: 0;
-	background: #fff;
-}
-.swiper-slide-prev .inner,
-.swiper-slide-next .inner {
-	opacity: 0.7;
-}
-
-
-.swiper-slide-active {
-.inner::before {
-	animation: ani 1s ease 1;
-		}
-
-.inner::after {
-animation: ani 1s ease 0.3s 1;
-}
-}
-
-
-.swiper-slide .inner .con {
-	position: relative;
-	z-index: 10;
-	img {
+	.swiper-wrapper {
 		width: 100%;
-		aspect-ratio: 16/9;
-		opacity: 1;
-		h2 {
-			font-weight: normal;
-			font-size: 40px;
-			font-family: 'Roboto';
-			color: #111;
-			margin-top: 15px;
-			margin-bottom: 20px;
+		height: 100%;
+
+		.swiper-slide {
+			width: 600px;
+			height: 480px;
+			position: relative;
+			top: 50%;
+			margin-top: -230px;
+
+			.inner {
+				width: 100%;
+				height: 100%;
+				background: #fff;
+				padding: 30px;
+				box-sizing: border-box;
+				opacity: 0.4;
+				transition: 1s;
+
+				&::before,
+				&::after {
+					content: '';
+					display: block;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					background: #fff;
+				}
+
+				.con {
+					position: relative;
+					z-index: 10;
+
+					img {
+						width: 100%;
+					}
+
+					h2 {
+						font-weight: normal;
+						font-size: 40px;
+						font-family: 'roboto';
+						color: #111;
+						margin-top: 15px;
+						margin-bottom: 20px;
+
+						&::after {
+							content: '';
+							display: block;
+							width: 30px;
+							height: 1px;
+							background-color: #888;
+							margin-top: 15px;
+							transition: 1s 0.5s;
+						}
+					}
+
+					p {
+						font-weight: normal;
+						font-size: 13px;
+						font-family: 'arial';
+						line-height: 1.3;
+						color: #aaa;
+						letter-spacing: 1px;
+					}
+				}
+			}
+
+			&-prev .inner,
+			&-next .inner {
+				opacity: 0.7;
+			}
+		}
+
+		.swiper-slide-active .inner {
+			opacity: 1;
+			box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.8);
+
+			&::before {
+				animation: ani 1s ease 1;
+			}
+
+			&::after {
+				animation: ani 1s ease 0.3s 1;
+			}
+
+			.con h2::after {
+				width: 100px;
+			}
 		}
 	}
- }
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		top: auto;
+		bottom: 50px;
+		filter: grayscale(100%) brightness(3);
+		transform: scale(0.5);
+
+		&.swiper-button-prev {
+			right: 100px;
+		}
+
+		&.swiper-button-next {
+			right: 60px;
+		}
+	}
+
+	.swiper-pagination-fraction {
+		bottom: auto !important;
+		top: 50px !important;
+		left: auto !important;
+		right: 50px !important;
+		width: auto !important;
+		font-size: 16px;
+		font-family: 'orbitron';
+		letter-spacing: 1px;
+		color: #eee !important;
+
+		span:nth-of-type(1) {
+			font-size: 30px;
+			color: #fff !important;
+		}
+	}
 }
 
 @keyframes ani {
@@ -181,35 +195,7 @@ animation: ani 1s ease 0.3s 1;
 		transform: scale(1.4);
 	}
 }
- 
 
-.wrap .swiper-wrapper .swiper-slide .inner .con h2 ::after {
-	content: '';
-	display: block;
-	width: 30px;
-	height: 1px;
-	background-color: #888;
-	margin-top: 15px;
-	transition: 1s 0.5s;
-}
-
-.swiper-wrapper .swiper-slide-active .inner .con h2 ::after {
-	width: 100px;
-}
-
-.swiper-wrapper .swiper-slide .inner .con p {
-	font-weight: normal;
-	font-size: 13px;
-	font-family: 'Roboto';
-	line-height: 1.3;
-	color: #aaa;
-	letter-spacing: 1px;
-}
-
-.content{
-	width: 100%;
-	padding: 10vh 15vw;
-}
 
 .video-grid {
 	display: grid;
@@ -231,6 +217,7 @@ animation: ani 1s ease 0.3s 1;
 	justify-content: space-between; 
 	height: 100%; /* 카드의 높이를 동일하게 설정 */
   aspect-ratio: 3 / 4; /* 비율을 3:4로 설정 */
+
 	.round {
 		font: 900 2rem/1 'Roboto';
 		color: #222;
@@ -269,18 +256,28 @@ animation: ani 1s ease 0.3s 1;
 	width: 100%;
 	aspect-ratio: 16/9;
 	object-fit: cover; /* 이미지 크기 조정 */
- 	// img{
-	// 	display: block; 
-	// 	transform: scale((1.5));
-	// }
+ 
  
 }
 
 /* 반응형: 화면이 좁아질 때 2열로 배치 */
 @media screen and (max-width: $tablet) {
-	.wrap{
-		width: 100%;
+	.auto {
+		bottom: 30px;
+		left: 20px;
+
+		li {
+			font-size: 16px;
+			margin-right: 10px;
+		}
 	}
+
+	
+	.swiper-slide {
+		width: 600px;
+		height: 450px;
+	}
+
     .video-grid {
 			 grid-template-columns: repeat(2, 1fr);
     }
@@ -289,10 +286,22 @@ animation: ani 1s ease 0.3s 1;
 
 /* 반응형: 더 좁아질 때 1열로 배치 */
 @media screen and (max-width: $mobile) {
-	.wrap{
-		width: 47%;
+	.auto {
+		bottom: 20px;
+		left: 10px;
+		li {
+			font-size: 14px;
+			margin-right: 5px;
+		}
+	}
+	.swiper-slide {
+		width: 100%;
+		height: 400px;
+		margin-top: 0;
+		top: auto;
 	}
     .video-grid {
 			grid-template-columns: repeat(1, 1fr);
     }
-}
+} 
+ 

@@ -1,4 +1,5 @@
-import {   } from 'react-icons/fa';
+ 
+// import { useEffect, useRef } from 'react';
 import Layout from '../common/Layout';
 import Pic from '../common/Pic';
 import useShortenText from '../../hooks/useShortenText';
@@ -20,14 +21,14 @@ export default function Youtube() {
 	const { data: Vids, isPending } = useYoutubeQuery({ type: 'B' });
 
  
-
+ 
 
 	return (
 		<Layout title={''}>
 
 
 		<div className="wrap">
-		<h1><span>YOUTUBE </span> </h1>
+					<h1>YOUTUBE <span>VIDEOS</span> </h1>
 		<ul className="auto">
 			{/* <li className="btnStart"><i className="fas fa-play"></i></li>
 			<li className="btnStop"><i className="fas fa-pause"></i></li> */}
@@ -123,33 +124,21 @@ export default function Youtube() {
 			{Vids?.slice(0, 8).map((vid, idx) => (
 
 
-	// 			<article key={idx} className="video-card" >
-  //  <p className="round">
-  // <i className="fa-solid fa-circle"></i> </p>
-	// 				<h3>
-	// 					<Link to={'/youtube/' + vid.id}>{shortenText(vid.snippet.title, 53)}</Link>
-	// 				</h3>
-	// 				<div className="txt">
-	// 					<p>{shortenText(vid.snippet.description, 50)}</p>
-	// 					<span>{combineText(vid.snippet.publishedAt.split('T')[0], '-', '.')}</span>
-	// 				</div>
-	// 				<Pic className="thumb" src={vid.snippet.thumbnails.high.url} />
-	// 			</article>
+				<article key={idx} className="video-card" >
+   <p className="round">
+  <i className="fa-solid fa-circle"></i> </p>
+					<h3>
+						<Link to={'/youtube/' + vid.id}>{shortenText(vid.snippet.title, 53)}</Link>
+					</h3>
+					<div className="txt">
+						<p>{shortenText(vid.snippet.description, 50)}</p>
+						<span>{combineText(vid.snippet.publishedAt.split('T')[0], '-', '.')}</span>
+					</div>
+					<Pic className="thumb" src={vid.snippet.thumbnails.high.url} />
+				</article>
 		
 
-	<article key={idx} className="video-card">
-  <Link to={'/youtube/' + vid.id} style={{ textDecoration: 'none', color: 'inherit' }}>
-    <p className="round">
-      <i className="fa-solid fa-circle"></i>
-    </p>
-    <h3>{shortenText(vid.snippet.title, 20)}</h3>
-    <div className="txt">
-      <p>{shortenText(vid.snippet.description, 50)}</p>
-      <span>{combineText(vid.snippet.publishedAt.split('T')[0], '-', '.')}</span>
-    </div>
-    <Pic className="thumb" src={vid.snippet.thumbnails.high.url} />
-  </Link>
-</article>
+ 
 		
 		))}
 
