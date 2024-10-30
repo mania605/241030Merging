@@ -32,7 +32,7 @@ export default function App() {
 					<Route path='/youtube' element={<Youtube />} />
 					<Route path='/contact' element={<Contact />} />
 					<Route path='/backgroundVideo' element={<BackgroundVideo />} />
-							<Route path='/post' element={<Post />} />
+					<Route path='/post' element={<Post />} />
 					<Route path='/post/:slug' element={<PostDetail />} />
 					<Route path='/post-add' element={<PostAdd />} />
 					<Route path='/post-edit/:slug' element={<PostEdit />} />

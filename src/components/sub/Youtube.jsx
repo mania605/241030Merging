@@ -128,19 +128,41 @@ export default function Youtube() {
 		{isPending && <p>Loading...</p>}
 		<div className="video-grid">
 			{Vids?.slice(0, 8).map((vid, idx) => (
-				<article key={idx} className="video-card">
-   <p className="round">
-  <i className="fa-solid fa-circle"></i> </p>
-					<h3>
-						<Link to={'/youtube/' + vid.id}>{shortenText(vid.snippet.title, 53)}</Link>
-					</h3>
-					<div className="txt">
-						<p>{shortenText(vid.snippet.description, 50)}</p>
-						<span>{combineText(vid.snippet.publishedAt.split('T')[0], '-', '.')}</span>
-					</div>
-					<Pic className="thumb" src={vid.snippet.thumbnails.high.url} />
-				</article>
-			))}
+
+
+	// 			<article key={idx} className="video-card" >
+  //  <p className="round">
+  // <i className="fa-solid fa-circle"></i> </p>
+	// 				<h3>
+	// 					<Link to={'/youtube/' + vid.id}>{shortenText(vid.snippet.title, 53)}</Link>
+	// 				</h3>
+	// 				<div className="txt">
+	// 					<p>{shortenText(vid.snippet.description, 50)}</p>
+	// 					<span>{combineText(vid.snippet.publishedAt.split('T')[0], '-', '.')}</span>
+	// 				</div>
+	// 				<Pic className="thumb" src={vid.snippet.thumbnails.high.url} />
+	// 			</article>
+		
+
+	<article key={idx} className="video-card">
+  <Link to={'/youtube/' + vid.id} style={{ textDecoration: 'none', color: 'inherit' }}>
+    <p className="round">
+      <i className="fa-solid fa-circle"></i>
+    </p>
+    <h3>{shortenText(vid.snippet.title, 53)}</h3>
+    <div className="txt">
+      <p>{shortenText(vid.snippet.description, 50)}</p>
+      <span>{combineText(vid.snippet.publishedAt.split('T')[0], '-', '.')}</span>
+    </div>
+    <Pic className="thumb" src={vid.snippet.thumbnails.high.url} />
+  </Link>
+</article>
+		
+		))}
+
+
+
+			
 		</div>
 	</Content>
 </Layout>
