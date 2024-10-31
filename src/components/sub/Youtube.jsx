@@ -23,10 +23,16 @@ export default function Youtube() {
 	const { data: Vids, isPending } = useYoutubeQuery({ type: 'B' });
 
  
- 
+	const handleThumbnailClick = () => {
+		setShowPopup(true); // 썸네일 클릭 시 팝업 열기
+	};
+
+	const closePopup = () => {
+		setShowPopup(false); // 외부 클릭 시 팝업 닫기
+	};
 
 	return (
-		<Layout title={''}>
+		<Layout title={'YOUTUBE'}>
 
 
 		<div className="wrap">
@@ -118,15 +124,14 @@ export default function Youtube() {
 		<div className="swiper-button-next"></div>
 		<div className="swiper-button-prev"></div>
 		{/* <div className="swiper-pagination"></div> */}
+		
 	</div>
-
+{/* 
 	<Content delay={1}>
 		{isPending && <p>Loading...</p>}
 		<div className="video-grid">
 			{Vids?.slice(0, 8).map((vid, idx) => (
-
-
-				<article key={idx} className="video-card" >
+			<article key={idx} className="video-card" >
    <p className="round">
   <i className="fa-solid fa-circle"></i> </p>
 					<h3>
@@ -138,17 +143,39 @@ export default function Youtube() {
 					</div>
 					<Pic className="thumb" src={vid.snippet.thumbnails.high.url} />
 				</article>
-		
-
- 
-		
-		))}
-
-
-
-			
+			))}
 		</div>
-	</Content>
+	</Content> */}
+
+
+
+	<Content delay={1}>
+    {isPending && <p>Loading...</p>}
+    <div className="video-grid">
+        {Vids?.slice(0, 8).map((vid, idx) => (
+            <Link to={`/youtube/${vid.id}`} key={idx} className="video-card">
+                <article>
+                    <div className="round">
+                        <FaCircle />
+                    </div>
+                    <h3>{shortenText(vid.snippet.title, 53)}</h3>
+                    <div className="txt">
+                        <p>{shortenText(vid.snippet.description, 50)}</p>
+                        <span>{combineText(vid.snippet.publishedAt.split('T')[0], '-', '.')}</span>
+                    </div>
+                    <Pic className="thumb" src={vid.snippet.thumbnails.high.url} />
+                </article>
+            </Link>
+        ))}
+    </div>
+</Content>
+
+
+
+
+
+
+
 </Layout>
 );
 }

@@ -24,3 +24,47 @@
 		color: orange;
 	}
 }
+
+
+
+
+
+코드 복사
+/* 팝업 오버레이 */
+.popup-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+}
+
+/* 팝업 콘텐츠 */
+.popup-content {
+	background-color: #fff;
+	padding: 20px;
+	width: 80%;
+	max-width: 800px;
+	box-sizing: border-box;
+	position: relative;
+	border-radius: 8px;
+}
+
+.popup-content .vidFrame {
+	width: 100%;
+	height: 60vh;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+.popup-content .vidFrame iframe {
+	border: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
