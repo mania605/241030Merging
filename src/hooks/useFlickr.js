@@ -13,7 +13,7 @@ const fetchFlickr = async ({ queryKey }) => {
 	const method_search = 'flickr.photos.search';
 
 	const flickr_api = import.meta.env.VITE_FLICKR_API;
-	const myID = '197119297@N02';
+	const myID = '201491599@N03';
 	const num = 19;
 	let url = '';
 	const urlMine = `${baseURL}?method=${method_mine}&api_key=${flickr_api}&user_id=${myID}&per_page=${num}&nojsoncallback=1&format=json`;

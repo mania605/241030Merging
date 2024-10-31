@@ -1,9 +1,4 @@
-// import Layout from '../common/Layout';
-// import memberData from '../../data/memberData';
-// import Pic from '../common/Pic';
-// import MaskBox from '../common/MaskBox';
-// import MaskText from '../common/MaskText';
-// import Content from '../common/Content';
+ 
 	import { useRef, useEffect, useState } from 'react';
 	import SplitText from '../common/SplitText';
 	
