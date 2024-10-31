@@ -13,7 +13,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import MobileMenu from './components/common/MobileMenu';
 import { useZustandStore } from './hooks/useZustand';
-import ColorSelector from './components/common/ColorSelector';
+// import ColorSelector from './components/common/ColorSelector';
 import BackgroundVideo from './components/sub/backgroundVideo';
 
 export default function App() {
@@ -39,7 +39,7 @@ export default function App() {
 				</Routes>
 			</AnimatePresence>
 
-<ColorSelector />
+{/* <ColorSelector /> */}
 		
 			<AnimatePresence>{IsMenu && <MobileMenu />}</AnimatePresence>
 

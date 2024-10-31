@@ -18,7 +18,7 @@ html {
 	font-size: 16px;
 }
 body {
-	background: rgba(var(--keyRGB), 1);
+	background: rgb(0, 0, 0);
 	width: 100%;
 	overflow-x: hidden;
 
@@ -34,9 +34,9 @@ body {
 	background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-	background: rgba(var(--keyRGB), 0.5);
+	background: rgba(68,68,68, 0.5);
 	border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: rgba(var(--keyRGB), 1);
+	background: rgba(68,68,68, 1);
 }
