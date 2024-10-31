@@ -1,4 +1,5 @@
- 
+
+import { FaCircle } from 'react-icons/fa'; // fa-circle 아이콘을 FaCircle로 가져옵니다.
 // import { useEffect, useRef } from 'react';
 import Layout from '../common/Layout';
 import Pic from '../common/Pic';
@@ -28,7 +29,7 @@ export default function Youtube() {
 
 
 		<div className="wrap">
-					<h1>YOUTUBE <span>VIDEOS</span> </h1>
+					<h2>YOUTUBE <span>VIDEOS</span> </h2>
 		<ul className="auto">
 			{/* <li className="btnStart"><i className="fas fa-play"></i></li>
 			<li className="btnStop"><i className="fas fa-pause"></i></li> */}

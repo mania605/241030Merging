@@ -14,11 +14,12 @@ main {
 	position: relative;
 	box-sizing: border-box;
 	margin-bottom: 20vh;
+	background-image: linear-gradient(45deg, #000, #100f0f);
  
 
-	h1 {
+	h2 {
 		font-weight: normal;
-		font-size: 24px;
+		font-size: 18px;
 		font-family: 'orbitron';
 		color: #fff;
 		letter-spacing: 1px;
@@ -59,7 +60,7 @@ main {
 
 		.swiper-slide {
 			width: 600px;
-			height: 480px;
+			height: 420px;
 			position: relative;
 			top: 50%;
 			margin-top: -230px;
@@ -92,6 +93,7 @@ main {
 
 					img {
 						width: 100%;
+						aspect-ratio: 16/9;
 					}
 
 					h2 {
@@ -226,12 +228,13 @@ main {
 	}
 	 h3 {
 		height: 10px;
-		font-size: 0.8rem;
-		color: #a5a2a2;
+		font: 0.8rem/0.8 'Roboto';
+ 		color: #a5a2a2;
 		margin-bottom: 10px;
 		line-height: 1.2;
 	}
 	.txt p {
+		font: 0.7rem/0.8 'Roboto';
 		height: 20px;
 		font-size: 0.7rem;
 		color: #555;
@@ -265,14 +268,11 @@ main {
 	.auto {
 		bottom: 30px;
 		left: 20px;
-
 		li {
 			font-size: 16px;
 			margin-right: 10px;
 		}
 	}
-
-	
 	.swiper-slide {
 		width: 600px;
 		height: 450px;
@@ -296,7 +296,7 @@ main {
 	}
 	.swiper-slide {
 		width: 100%;
-		height: 400px;
+		height: 300px;
 		margin-top: 0;
 		top: auto;
 	}
