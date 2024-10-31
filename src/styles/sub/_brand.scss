@@ -3,11 +3,10 @@
 $margin: 150px;
 
 main {
-	// background-color: #ffffff;
 	width: 100%;
 	padding: 10vh 15vw;
 	min-height: 120vh;
-	font-family: 'Noto Serif KR';
+	font-family: 'Noto Serif KR'; 
 }
 
 .ceoBox {
@@ -17,7 +16,6 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: $margin;
-	padding-left: 200px;
 	word-break: keep-all; /* 단어 단위로 줄바꿈 유지 */
 	.story {
 		width: 40%;

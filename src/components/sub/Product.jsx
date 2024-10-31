@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Layout from '../common/Layout';
-import BackgroundVideo from './BackgroundVideo';
-// import Pic from '../common/Pic';
+import BackgroundVideo from './backgroundVideo';
+import Pic from '../common/Pic';
 
 export default function Product() {
     const [Flickr, setFlickr] = useState([]);
@@ -26,6 +26,7 @@ export default function Product() {
 
     return (
         <div className="product-page">
+            <section className='Phead'></section>
             <BackgroundVideo />
             <Layout title={"Product"}>
                 <div className="center-text">AVALLION UNIVERSE</div>
@@ -56,6 +57,8 @@ export default function Product() {
                     )}
                 </section>
             </Layout>
+            <section className='Phead'></section>
         </div>
+ 
     );
 }

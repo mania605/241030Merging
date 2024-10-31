@@ -1,23 +1,22 @@
+ 
+	
+// 	& > h2 {
+// 		font: normal 7rem/1 'arial';
+// 		color: #353535;
+// 		margin-bottom: 60px;
+		
+// 	}
+// }
+ 
+
 main {
 	width: 100%;
-	min-height: 80vh;
-  padding: 0vh 0vw;
-	
-	& > h2 {
-		font: normal 7rem/1 'arial';
-		color: #353535;
-		margin-bottom: 60px;
-		
-	}
+	padding: 10vh 15vw;
+	min-height: 120vh;
 }
- 
 
 //main페이지 전용 스타일
 main.main {
 	width: 100%;
-	padding: 0px 0px;
+	padding: 0px;
 }
- 
-
-
-

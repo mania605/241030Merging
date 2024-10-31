@@ -5,7 +5,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	border-bottom: 1px solid #1a1919;
+	border-bottom: 1px solid rgba(var(--keyRGB), 2);
 
 	h1 {
 		font: 900 2rem/1 'amiri';
@@ -23,7 +23,10 @@
 	nav {
 		display: flex;
 		align-items: center;
-		gap: 70px;
+		gap: 70px; 
+			justify-content: space-between;
+ 			background-color: rgba(var(--keyRGB), 2);
+			padding: 8px 12px;
 
 		.gnb {
 			display: flex;

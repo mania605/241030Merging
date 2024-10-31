@@ -1,10 +1,9 @@
-//백그라운드 스타일 재조정 테스트
-
 .main{
 	padding: 10vh 10vw;
 }
 
 .product-page{
+	position: relative;
 
 	.center-text {
 		position: absolute;
@@ -13,31 +12,54 @@
 		font-family: 'armini', sans-serif;
 		text-align: center;
 		margin-top: -50px;
+		margin-left: 15px;
 	}
 
 	.productList {
 		position: relative;
 		width: 100vw;
-		height: 150vh;
+		height: 100vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		// text-align: center;
-		// margin-left: -170px;
-		margin-top: 150px;
+		margin-left: -300px;
+		// margin-top: -100px;
 
 		.pic {
 		position: relative;
 		width: 100px; /* 이미지 크기 조정 */
 		height: 100px; // 높이 값 오토로 놓으면 반영할 부모 값이 없어서 이미지 안보임
-		border-radius: px;
+		border-radius: 10px;
 		overflow: hidden;
+
 		}
-		h3{
+
+		.article h3{
 			font-family: 'armini';
+			cursor: pointer;
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 10;
+			img {
+				max-width: 80vw;
+				max-height: 80vh;
+				box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
 		}
 	}
 }
+
+.phead{
+	width: 100%;
+	height: 100vh;
+}
+.Pfoot{
+	width: 100%;
+	height: 100vh;
+}
+
 
 @media screen and (max-width: $tablet) {
 	.product {
@@ -60,4 +82,5 @@
 			}
 		}
 	}
+}
 }
